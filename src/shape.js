@@ -22,9 +22,13 @@ Shape.prototype.toString = function() {
 };
 
 Shape.prototype.getRGB = function() {
-  // Return the rgb value (as a string) for the color you've selected.
-  // You can have a preset list of colors that you switch on.
-  return "rgb(0,0,0)";
+  if (this.color == "red"){
+  	return "rgb(255,0,0)";	
+  } else if (this.color == "green"){
+  	return "rgb(0,255,0)";
+  } else if (this.color == "blue"){
+  	return "rgb(0,0,255)";
+  }  
 }
 
 module.exports = Shape;
